@@ -1,0 +1,1 @@
+ini kode dashboard website penjualan novel saya, gw mau tambahin fitur/halaman baru untuk detail penjualan jadi kalau kita tekan card novel yang ingin kita lihat itu akan tertuju ke halaman detail penjualan yang memperlihatkan detail produk yang kita tekan tadi di dashboard.

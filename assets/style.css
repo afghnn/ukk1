@@ -1,0 +1,77 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: #f0f2f5; overflow-x: hidden; }
+
+.wrapper { display: flex; width: 100%; min-height: 100vh; padding: 20px; gap: 20px; }
+
+/* --- SIDEBAR FIX --- */
+.sidebar {
+    width: 260px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    box-shadow: 0 10px 300px rgba(0,0,0,0.05);
+}
+
+.sidebar-header { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+
+.nav-menu { list-style: none; flex-grow: 1; }
+.nav-menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: #8e8e93;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    background: #f4f4f7;
+    color: #1a1a1a;
+    font-weight: 600;
+    transform: scale(1);
+}
+
+.logout-section a { color: #e74c3c; text-decoration: none; font-size: 14px; }
+
+/* --- CONTENT FIX --- */
+.main-content { flex-grow: 1; padding: 20px 10px; }
+
+.content-header { margin-bottom: 30px; }
+.content-header h2 { font-size: 28px; color: #1a1a1a; }
+.content-header p { color: #8e8e93; }
+
+.stats-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; 
+}
+
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 { font-size: 14px; opacity: 0.8; margin-bottom: 10px; text-transform: uppercase; }
+.card-val { font-size: 28px; font-weight: 700; }
+.card-val span { font-size: 16px; font-weight: 400; opacity: 0.7; }
+
+.card-blue { background: linear-gradient(135deg, #6366f1, #a855f7); }
+.card-cyan { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+.card-green { background: linear-gradient(135deg, #10b981, #3b82f6); }
+
+.activity-card {
+    background: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
